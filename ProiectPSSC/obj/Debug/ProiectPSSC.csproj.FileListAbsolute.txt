@@ -1,0 +1,5 @@
+D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\bin\Debug\ProiectPSSC.exe.config
+D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\bin\Debug\ProiectPSSC.exe
+D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\bin\Debug\ProiectPSSC.pdb
+D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\obj\Debug\ProiectPSSC.exe
+D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\obj\Debug\ProiectPSSC.pdb
