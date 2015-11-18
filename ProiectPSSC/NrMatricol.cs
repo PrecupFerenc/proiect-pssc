@@ -19,7 +19,7 @@ namespace ProiectPSSC
             }
             else
             {
-                //throw new System.IncorectNumberFormatException();
+                Console.Write("Numar matricol gresit");//throw new System.IncorectNumberFormatException();
            }
         }
     }

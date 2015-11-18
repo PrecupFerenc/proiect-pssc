@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProiectPSSC
 {
-    class Note
+    class Note  // imi adauga nota in lista
     {
         private List<Nota> _note;
         public ReadOnlyCollection<Nota> Valori { get { return _note.AsReadOnly(); } }
