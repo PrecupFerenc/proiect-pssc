@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
 
 namespace ProiectPSSC
 {
@@ -13,14 +14,10 @@ namespace ProiectPSSC
 
         public NrMatricol(string numar)
         {
-            if (numar.Length == 7)
-            {
-                _numar = numar;
-            }
-            else
-            {
-                Console.Write("Numar matricol gresit");//throw new System.IncorectNumberFormatException();
-           }
+            Contract.Requires<ArgumentNullException>(numar != null, "text");
+            Contract.Requires<ArgumentCannotBeEmptyStringException>(!string.IsNullOrEmpty(numar), "text");
+            Contract.Requires<ArgumentException>(numar.Length==7, "Numarul matricol are exact 7 caractere.");
+            _numar = numar;
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
 
 namespace ProiectPSSC
 {
@@ -17,6 +18,10 @@ namespace ProiectPSSC
         {
            if (( numarator > 0 ) && (numitor > 0) && (numarator > numitor))
            {
+               Contract.Requires<ArgumentException>(numarator > 0, "numarator");
+               Contract.Requires<ArgumentException>(numitor > 0, "numitor");
+               Contract.Requires<ArgumentException>(numitor > numarator, "nu este subunitar");
+
                _numitor = numitor;
                _numarator = numarator;
            }

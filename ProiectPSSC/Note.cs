@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
 
 namespace ProiectPSSC
 {
@@ -20,6 +21,7 @@ namespace ProiectPSSC
         //acest constructor este internal pentru ca ar trebui sa fie folosit doar din repository
         internal Note(List<Nota> note)
         {
+            Contract.Requires(note != null, "lista de note");
             _note = note;
         }
 
@@ -27,13 +29,14 @@ namespace ProiectPSSC
         {
             get
             {
-                if (_note.Count < 2) throw new NoteInsuficienteException();
+                if (_note.Count < 2) throw new NoteInsuficienteException(_note.Count);
                 return new Nota(_note.Select(n => n.Valoare).Average());
             }
         }
 
         internal void AdaugaNota(Nota nota)
         {
+            Contract.Requires(nota != null, "nota");
             _note.Add(nota);
         }
     }

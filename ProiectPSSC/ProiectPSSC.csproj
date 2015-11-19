@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArgumentCannotBeEmptyStringException.cs" />
     <Compile Include="CoeficientNote.cs" />
     <Compile Include="IncorectNumberFormatException_2.cs" />
+    <Compile Include="Materie.cs" />
     <Compile Include="Nota.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="NoteInsuficienteException.cs" />

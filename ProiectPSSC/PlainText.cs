@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
 
 namespace ProiectPSSC
 {
@@ -13,11 +14,9 @@ namespace ProiectPSSC
 
         public PlainText(string text)
         {
-            if (!String.IsNullOrEmpty(text))
-            {
-                _text = text;
-            }
-            else { Console.Write("Introduceti caractere"); }
+            Contract.Requires<ArgumentNullException>(text != null, "text");
+            Contract.Requires<ArgumentCannotBeEmptyStringException>(!string.IsNullOrEmpty(text), "text");
+            _text = text;
         }
     }
 }

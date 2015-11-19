@@ -8,4 +8,3 @@ D:\proiect-pssc\ProiectPSSC\obj\Debug\ProiectPSSC.exe
 D:\proiect-pssc\ProiectPSSC\obj\Debug\ProiectPSSC.pdb
 D:\proiect-pssc\ProiectPSSC\bin\Debug\ProiectPSSC.exe
 D:\proiect-pssc\ProiectPSSC\bin\Debug\ProiectPSSC.pdb
-D:\proiect-pssc\ProiectPSSC\obj\Debug\ProiectPSSC.csprojResolveAssemblyReference.cache
