@@ -42,9 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArgumentCannotBeEmptyStringException.cs" />
+    <Compile Include="ArgumentInvalidLengthException.cs" />
     <Compile Include="CoeficientNote.cs" />
+    <Compile Include="Facultate.cs" />
+    <Compile Include="FacultateaExistaExceptions.cs" />
+    <Compile Include="IMaterieRepository.cs" />
     <Compile Include="IncorectNumberFormatException_2.cs" />
     <Compile Include="Materie.cs" />
+    <Compile Include="MaterieFactory.cs" />
+    <Compile Include="MaterieRepository.cs" />
     <Compile Include="Nota.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="NoteInsuficienteException.cs" />
@@ -52,7 +58,9 @@
     <Compile Include="PlainText.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secretariat.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="StudentulExistaExceptions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

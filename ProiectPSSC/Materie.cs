@@ -32,5 +32,41 @@ namespace ProiectPSSC
             Contract.Requires(studentiInscrisi != null, "lista de studenti inscrisi");
             _studentiInscrisi = studentiInscrisi;
         }
+
+        public void InscrieStudent(Student student)
+        {
+            Contract.Requires(student != null, "student");
+            
+            var gasit = _studentiInscrisi.FirstOrDefault(s => s.Equals(student));
+            if (gasit == null)
+            {
+                _studentiInscrisi.Add(student);
+            }
+            else
+            {
+                throw new StudentulExistaExceptions();
+            }
+        }
+
+        public void AddNota(NrMatricol NrMatStud, Nota nota)
+        {
+            Contract.Requires(NrMatStud != null);
+            Contract.Requires(nota != null);
+           
+
+            var student = _studentiInscrisi.First(s => s.nrMatricol.Equals(NrMatStud));
+            student.noteParcurs.AdaugaNota(nota);
+        }
+
+        public void AddNoteExamen(Dictionary<NrMatricol, Nota> rezultateExamen)
+        {
+            Contract.Requires(rezultateExamen != null);
+            
+            foreach (var pair in rezultateExamen)
+            {
+                var student = _studentiInscrisi.First(s => s.nrMatricol.Equals(pair.Key));
+                student.notaExamen = pair.Value;
+            }
+        }
     }
 }

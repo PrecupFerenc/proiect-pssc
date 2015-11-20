@@ -1,10 +1,1 @@
-D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\bin\Debug\ProiectPSSC.exe.config
-D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\bin\Debug\ProiectPSSC.exe
-D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\bin\Debug\ProiectPSSC.pdb
-D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\obj\Debug\ProiectPSSC.exe
-D:\Ferko\Probleme VisualStudio\PSSC\ProiectPSSC\ProiectPSSC\obj\Debug\ProiectPSSC.pdb
 D:\proiect-pssc\ProiectPSSC\bin\Debug\ProiectPSSC.exe.config
-D:\proiect-pssc\ProiectPSSC\obj\Debug\ProiectPSSC.exe
-D:\proiect-pssc\ProiectPSSC\obj\Debug\ProiectPSSC.pdb
-D:\proiect-pssc\ProiectPSSC\bin\Debug\ProiectPSSC.exe
-D:\proiect-pssc\ProiectPSSC\bin\Debug\ProiectPSSC.pdb
